@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: #222222;
+    --primary-light-clr: #6a6a6a;
+    --secondary-light-clr: #606060;
+    --logo-clr: #ff385c;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+.container {
+    width: 1370px;
+    height: 100%;
+    margin: 0 auto; 
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
