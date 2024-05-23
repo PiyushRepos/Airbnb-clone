@@ -63,3 +63,33 @@
 .profile-icon {
     height: 30px;
 }
+
+@media (max-width: 912px) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav {
+        gap: 1rem;
+    }
+
+    .nav-right{
+        gap: .87rem;
+    }
+
+    .nav-right p{
+        font-size: .8rem;
+    }
+
+    .globe-icon {
+        font-size: .8rem;
+    }
+
+    .menu-icon {
+        height: 15px;
+    }
+
+    .profile-icon {
+        height: 22px;;
+    }
+}
