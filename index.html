@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airbnb clone</title>
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +17,12 @@
       rel="stylesheet"
     />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="category.css" />
+    <link rel="stylesheet" href="toggle-switch.css" />
+    <link rel="stylesheet" href="cards.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
 
   <body>
@@ -28,13 +37,390 @@
         </ul>
         <div class="nav-right">
           <p class="cursor-pointer">Airbnb your home</p>
-          <img class="globe-icon cursor-pointer" src="./assets/globe.svg" alt="globe icon" />
+          <img
+            class="globe-icon cursor-pointer"
+            src="./assets/globe.svg"
+            alt="globe icon"
+          />
           <div class="profile-container">
-            <img class="menu-icon cursor-pointer" src="./assets/hamburger-menu.svg" alt="menu icon" />
-            <img class="profile-icon cursor-pointer" src="./assets/profile.svg" alt="profile icon" />
+            <img
+              class="menu-icon cursor-pointer"
+              src="./assets/hamburger-menu.svg"
+              alt="menu icon"
+            />
+            <img
+              class="profile-icon cursor-pointer"
+              src="./assets/profile.svg"
+              alt="profile icon"
+            />
           </div>
         </div>
       </nav>
+      <div class="categories">
+        <div class="category-box">
+          <div class="category active cursor-pointer">
+            <img src="./assets/category-1.jpg" />
+            <p>Amazing pools</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-2.webp" />
+            <p>Icons</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-3.jpg" />
+            <p>Amazing views</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-4.jpg" />
+            <p>Farms</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-5.jpg" />
+            <p>National parks</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-6.jpg" />
+            <p>A frames</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-7.jpg" />
+            <p>Lakefront</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-8.jpg" />
+            <p>OMG!</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-9.jpg" />
+            <p>Beachfront</p>
+          </div>
+          <div class="category cursor-pointer">
+            <img src="./assets/category-11.jpg" />
+            <p>Cabins</p>
+          </div>
+        </div>
+        <div class="filter cursor-pointer">
+          <img src="./assets/filter.svg" alt="svg icon" />
+          <span>Filter</span>
+        </div>
+        <div class="toggle-tax">
+          <p>Display total before taxes</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider">
+              <svg
+                class="slider-icon"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+              >
+                <path fill="none" d="m4 16.5 8 8 16-16"></path>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards">
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-1.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Nashik, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-2.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <p class="card-location">Vadholi, India</p>
+          <p class="card-distance">138 kilometers away</p>
+          <p class="card-stay">2-7 Jun</p>
+          <p class="card-price"><span>₹15,667</span> night</p>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-3.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Pimplad nashik, India</p>
+            <p class="card-distance">134 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>20,884</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-4.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+            <p class="badge">Guest favourite</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Sahan, India</p>
+            <p class="card-distance">40 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>₹25,1.6</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-5.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Bamansure, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>New</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-1.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Nashik, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-2.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <p class="card-location">Vadholi, India</p>
+          <p class="card-distance">138 kilometers away</p>
+          <p class="card-stay">2-7 Jun</p>
+          <p class="card-price"><span>₹15,667</span> night</p>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-3.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Pimplad nashik, India</p>
+            <p class="card-distance">134 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>20,884</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-4.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+            <p class="badge">Guest favourite</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Sahan, India</p>
+            <p class="card-distance">40 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>₹25,1.6</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-5.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Bamansure, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>New</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-1.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Nashik, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-2.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <p class="card-location">Vadholi, India</p>
+          <p class="card-distance">138 kilometers away</p>
+          <p class="card-stay">2-7 Jun</p>
+          <p class="card-price"><span>₹15,667</span> night</p>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-3.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Pimplad nashik, India</p>
+            <p class="card-distance">134 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>20,884</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-4.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+            <p class="badge">Guest favourite</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Sahan, India</p>
+            <p class="card-distance">40 kilometers away</p>
+            <p class="card-stay">4-9 Jun</p>
+            <p class="card-price"><span>₹25,1.6</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-5.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Bamansure, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>New</p>
+            </div>
+          </div>
+        </div>
+        <div class="card cursor-pointer">
+          <div class="card-header">
+            <img class="card-img" src="./assets/card-images/card-img-5.webp" />
+            <img class="heart" src="./assets/card-images/heart.svg" />
+          </div>
+          <div class="card-footer">
+            <p class="card-location">Bamansure, India</p>
+            <p class="card-distance">109 kilometers away</p>
+            <p class="card-stay">2-7 Jun</p>
+            <p class="card-price"><span>₹26,725</span> night</p>
+            <div class="star">
+              <img src="./assets/star.svg" alt="" />
+              <p>New</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container show-more">
+      <p>Continue exploring amazing pools</p>
+      <button class="btn cursor-pointer">Show more</button>
+    </div>
+    <div class="footer-box">
+      <div class="container">
+        <footer class="footer">
+          <div class="footer-top">
+            <ul>
+              <li>
+                <a href="#"><b>Support</b></a>
+              </li>
+              <li><a class="footer-link" href="#">Help Centre</a></li>
+              <li><a class="footer-link" href="#">AirCover</a></li>
+              <li><a class="footer-link" href="#">Anti-discrimination</a></li>
+              <li><a class="footer-link" href="#">Disability support</a></li>
+              <li><a class="footer-link" href="#">Cancellation options</a></li>
+              <li>
+                <a class="footer-link" href="#">Report neighbourhood concern</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"><b>Hosting</b></a>
+              </li>
+              <li><a class="footer-link" href="#">Airbnb your home</a></li>
+              <li><a class="footer-link" href="#">AirCover for Hosts</a></li>
+              <li><a class="footer-link" href="#">Hosting resources</a></li>
+              <li><a class="footer-link" href="#">Community forum</a></li>
+              <li><a class="footer-link" href="#">Hosting responsibly</a></li>
+              <li>
+                <a class="footer-link" href="#">Join a free Hosting class</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"><b>Airbnb</b></a>
+              </li>
+              <li><a class="footer-link" href="#">Newsroom</a></li>
+              <li><a class="footer-link" href="#">New features</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+              <li><a class="footer-link" href="#">Investors</a></li>
+              <li>
+                <a class="footer-link" href="#">Airbnb.org emergency stays</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-left">
+              <p>
+                © 2024 Airbnb, Inc. · <a href="#">Privacy</a> ·
+                <a href="#">Terms</a> · <a href="#">Sitemap</a> ·
+                <a href="#">Company details</a>
+              </p>
+            </div>
+            <div class="footer-right">
+              <img src="./assets/globe.svg" />
+              <span>English (IN)</span>
+              <p>₹<span>INR</span></p>
+              <img src="./assets/facebook.svg" alt="Facebook logo" />
+              <img src="./assets/twitter.svg" alt="Twitter logo" />
+              <img src="./assets/instagram.svg" alt="Instagram logo" />
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
