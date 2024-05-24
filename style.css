@@ -1,66 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  appearance: none;
+  width: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 10px;
+  height: 8px;
+  background-color: rgb(172, 174, 172);
 }
 
 :root {
-    --primary-clr: #222222;
-    --primary-light-clr: #6a6a6a;
-    --secondary-light-clr: #606060;
-    --logo-clr: #ff385c;
+  --primary-clr: #222222;
+  --primary-light-clr: #6a6a6a;
+  --secondary-light-clr: #606060;
+  --logo-clr: #ff385c;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100vh;
-    font-family: "Poppins", system-ui, sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", system-ui, sans-serif;
 }
 
 .container {
-    max-width: 92rem;
-    margin: 0 auto; 
-    padding: 0 1rem;
-    position: relative;
+  max-width: 92rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
 }
 
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .show-more {
-    text-align: center;
-    padding: 3rem 0;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .show-more p {
-    color: #000;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 .btn {
-    background-color: #000;
-    color: #fff;
-    padding: .75rem 1.5rem;
-    font-weight: 600;
-    border-radius: 8px;
-    font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 609px) {
-    .container {
-         width: 100%;
-         padding: .35rem;
-    }
+  .container {
+    width: 100%;
+    padding: 0.35rem;
+  }
+
+  .show-more {
+    padding: 2rem 0;
+  }
+
+  .show-more p {
+    color: #000;
+    font-weight: 600;
+    font-size: .95rem;
+    padding-bottom: 1rem;
+  }
+
+  .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: .75rem;
+  }
 }
